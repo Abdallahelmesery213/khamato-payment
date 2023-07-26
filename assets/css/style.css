@@ -1,0 +1,29 @@
+html{
+    direction: rtl;
+}
+.payment-page{
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 50px;
+    
+}
+.payment-page .shopping-price{
+    position: fixed;
+    height: 84vh;
+    background-color: #fff;
+    width: 19%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: right;
+    padding: 20px;
+}
+.payment-page .shopping-price h6{
+    color: #edac60;
+}
+.payment-page .shopping-price hr{
+    border-top: 2px solid rgba(0,0,0,.1);
+}
+.payment-page .shopping-details{
+    background-color: #fff;
+    height: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
