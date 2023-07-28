@@ -9,6 +9,7 @@ hr{
     position: relative;
     padding: 50px 25px;
     text-align: right;
+    margin-bottom: 20px;
 }
 .payment-page h4{
     font-size: 20px;
@@ -29,6 +30,9 @@ hr{
     color: #4a494c;
     font-size: 19px;
 } */
+.address-title .address{
+    direction: rtl;
+}
 .address-title .address i {
     color: #70bc35;
     font-size: 20px;
@@ -52,6 +56,7 @@ hr{
     box-shadow: 0 4px 8px 0 rgba(135,135,135, 0.2), 0 6px 20px 0 rgba(171,171,171, 0.19);    
     padding: 20px 0;
     margin-bottom: 50px;
+    direction: rtl;
 }
 .products .head h4{
     /* color: #111111; */
@@ -93,6 +98,9 @@ hr{
 .payment-way .form-check label{
     margin-right: 20px;
 }
+.payment-way .address-description{
+    direction: rtl;
+}
 .payment-way .address-description i{
     color: #edac60;
     font-size: 20px;
@@ -118,7 +126,7 @@ hr{
 }
 .payment-page .shopping-price h6{
     color: #edac60;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .payment-page .summary p{
     font-size: 15px;
@@ -204,6 +212,17 @@ hr{
     }
     .payment-way .address i {
         font-size: 18px;
+    }
+    .payment-page .buttons-req{
+        position: fixed;
+        bottom: 0px;
+        width: 85%;
+        transform: translateX(-50%);
+        left: 50%;
+        margin: auto;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
     }
 }
 
