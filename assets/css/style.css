@@ -7,8 +7,12 @@ hr{
 .payment-page{
     background-color: #f1f1f1;
     position: relative;
-    padding: 50px;
+    padding: 50px 25px;
     text-align: right;
+}
+.payment-page h4{
+    font-size: 20px;
+    color: #edac60;
 }
 /* start right */
 /* .payment-page .shopping-details{
@@ -17,14 +21,14 @@ hr{
 /* start address section */
 .shopping-details .address-title{
     background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(135,135,135, 0.2), 0 6px 20px 0 rgba(171,171,171, 0.19);
     padding: 20px 0;
     margin-bottom: 50px;
 }
-.address-title h5{
+/* .address-title h4{
     color: #4a494c;
     font-size: 19px;
-}
+} */
 .address-title .address i {
     color: #70bc35;
     font-size: 20px;
@@ -45,14 +49,14 @@ hr{
 /* start products section */
 .products{
     background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 40px 0;
+    box-shadow: 0 4px 8px 0 rgba(135,135,135, 0.2), 0 6px 20px 0 rgba(171,171,171, 0.19);    
+    padding: 20px 0;
     margin-bottom: 50px;
 }
-.products .head h2{
-    color: #111111;
+.products .head h4{
+    /* color: #111111; */
     padding-right: 20px;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 .product-item hr{
     border-top: 1px solid rgba(0,0,0,.1) !important;
@@ -104,8 +108,8 @@ hr{
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    width: 19%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(135,135,135, 0.2), 0 6px 20px 0 rgba(171,171,171, 0.19);    
     text-align: right;
     padding: 20px 0;
 }
@@ -133,5 +137,74 @@ hr{
 .summary button.btn{
     width: 100%;
     margin: auto;
+    background-color: #979494;
+    border-color: #979494;
+}
+.summary button.confirm{
+    background: #ef9831;
+    color: #fff;
+    border-color: #ef9831;
+}
+/* end left */
+
+/* start media query */
+/* @media (min-width: 30em) and (max-width: 50em) */
+
+@media only screen and (max-width: 858px) {
+    .payment-page .summary p{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width: 1134px) {
+    .payment-page .summary .result p{
+        font-size: 13px;
+    }
+    .products .product-item{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1189px) {
+    .payment-page .summary p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .payment-page .shopping-price{
+        position: relative;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .payment-page .summary p{
+        font-size: 14px !important;
+    }
+    .payment-page h4 {
+        font-size: 16px;
+    }
+    .address-title .address-description h6 {
+        font-size: 15px;
+    }
+    .address-title .address-description p {
+        font-size: 14px;
+    }
+    .products .product-item .title h6 {
+        font-size: 15px;
+    }
+    .products .product-item .title p {
+        font-size: 13px;
+    }
+    .products .item p {
+        font-size: 14px;
+    }
+    .shopping-details .address-title{
+        margin-bottom: 30px;
+    }
+    .products{
+        margin-bottom: 30px;
+    }
+    .payment-way .address i {
+        font-size: 18px;
+    }
 }
 
+/* end media query */
