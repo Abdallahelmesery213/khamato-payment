@@ -67,8 +67,8 @@ hr{
     border-top: 1px solid rgba(0,0,0,.1) !important;
 }
 .products .product-item{
-    width: 70%;
-    margin: 0 40px;
+    width: 90%;
+    margin: auto;
     padding: 20px 0;
 }
 .products .product-item .title{
@@ -176,13 +176,17 @@ hr{
         font-size: 14px;
     }
 }
+/* @media only screen and (max-width: 768px) {
+    .payment-page .shopping-price{
+        position: relative;
+        width: 100%;
+    }
+} */
 @media only screen and (max-width: 768px) {
     .payment-page .shopping-price{
         position: relative;
         width: 100%;
     }
-}
-@media only screen and (max-width: 600px) {
     .payment-page .summary p{
         font-size: 14px !important;
     }
@@ -205,6 +209,7 @@ hr{
         font-size: 14px;
     }
     .shopping-details .address-title{
+        margin-top: 30px;
         margin-bottom: 30px;
     }
     .products{
@@ -216,13 +221,71 @@ hr{
     .payment-page .buttons-req{
         position: fixed;
         bottom: 0px;
-        width: 85%;
         transform: translateX(-50%);
         left: 50%;
         margin: auto;
         z-index: 1000;
         display: flex;
         justify-content: center;
+        width: 86%;
+        background: #fff;
+        padding: 5px 0;
+        box-shadow: 0 4px 8px 0 rgba(135,135,135, 0.2), 0 6px 20px 0 rgba(171,171,171, 0.19);
+    }
+    .products .product-item {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 557px) {
+    .payment-page .buttons-req{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 525px) {
+    .payment-page .buttons-req{
+        width: 84%;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .payment-page .buttons-req{
+        width: 83%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .payment-page .buttons-req{
+        width: 82%;
+    }
+}
+@media only screen and (max-width: 435px) {
+    .payment-page .buttons-req{
+        width: 81%;
+    }
+}
+@media only screen and (max-width: 405px) {
+    .payment-page .buttons-req{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 388px) {
+    .payment-page .buttons-req{
+        width: 79%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .payment-page .buttons-req{
+        width: 78%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .payment-page .buttons-req{
+        width: 77%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .payment-page .buttons-req{
+        width: 76%;
     }
 }
 
